@@ -3,231 +3,143 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Manrope';
     list-style: none;
-}
-*::selection {
-    background-color: #262950;
 }
 
 body {
-    background-color: #00061A;
+    min-height: 100vh;
+    font-family: 'Poppins';
+    background-color: #EFEFEF;
 }
 
-/* Header */
-header {
-    z-index: 999;
-    position: sticky;
+/* NAVBAR */
+nav {
     top: 0;
+    position: sticky;
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(45, 45, 45, 0.5);
-    backdrop-filter: blur(20px);
+    background-color: rgba(239, 239, 239, 0.89);
+    backdrop-filter: blur(5px);
 }
 
-header .headLogo a {
+nav .nav-logo a {
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #FFF;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #D3506B;
 }
 
-header .headLogo img {
-    width: 30px;
-    margin-right: 15px;
+nav .nav-logo h2 {
+    font-family: 'Manrope';
+    font-weight: 800;
 }
 
-header nav  {
+nav .nav-logo img {
+    width: 60px;
+}
+
+nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 
-header nav a {
-    padding: 20px 0;
+nav ul a {
+    color: #D3506B;
+    font-family: 'Manrope';
+    font-size: 1.05rem;
     font-weight: 600;
-    color: #CCC;
     transition: .2s ease-in-out;
 }
-header nav a:hover {
-    color: #4169E1;
+nav ul a:hover {
+    color: #FFB792;
 }
 
-header nav i {
-    margin-left: 5px;
-    font-size: 10px;
-    vertical-align: middle;
+/* HEADER */
+header {
+    width: 100%;
+    padding: 0 50px;
 }
 
-header nav .navDropDown:hover .navD2Content {
-    display: block;
+header .kabinet {
+    text-align: center;
+    padding: 50px 0;
 }
 
-header nav .navD2Content {
-    margin-top: 12.5px;
-    display: none;
-    position: absolute;
-    background-color: #00061A;
-    border: 1px solid #666;
-}
-
-header nav .navD2Content a {
-    display: flex;
-    padding: 8px 20px;
-}
-header nav .navD2Content a:hover {
-    background-color: #171A24;
-}
-
-
-/* Main */
-main .visiMisi {
-    padding: 30px 50px 50px 50px;
-    display: flex;
-    justify-content: space-between;
-    color: #CCC;
-}
-
-main .visiMisi h2 {
-    cursor: default;
-    color: #FFF;
+header .kabinet h3 {
     font-size: 2.5rem;
+    color: #444;
+}
+header .kabinet h2 {
+    font-size: 3.5rem;
+    margin-top: -20px;
+    background: linear-gradient(to right, #D3506B, #FFB792);
+    background-clip: text;
+    color: transparent;
 }
 
-main .visiMisi .visi {
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+header .fullteam {
+    padding: 0 0 50px 0;
 }
 
-main .visiMisi p {
-    padding: 10px 20px;
-    border-radius: 3px;
-    background-color: #171A24;
-    transition: .1s ease-in-out;
-}
-main .visiMisi p:hover {
-    color: #FFF;
-    background-color: #4169E1;
+header .fullteam img {
+    width: 100%;
+    border-radius: 20px;
 }
 
-main .visiMisi .misi {
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+/* MAIN */
+main {
+    padding: 0 50px;
+    background-color: #FFF;
 }
 
-main  .visiMisi .misi .noTextMisi {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+main h2 {
+    text-align: center;
+    padding: 25px 0 0 0;
+    font-size: 2.5rem;
+    color: #444;
 }
 
-
-
-/* Footer */
-footer {
-    padding: 100px 50px 15px 50px;
-    background-color: rgba(45, 45, 45, 0.5);
-    backdrop-filter: blur(10px);
-}
-
-footer .footWrap {
-    display: flex;
-}
-
-footer .footLogo {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-footer .footLogo p {
-    color: #AAA;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-footer .footLogo .footLogoPict {
-    cursor: default;
-    display: flex;
-    align-items: center;
-}
-
-footer .footLogo .footLogoPict h2 {
-    color: #FFF;
-}
-
-footer .footLogoPict img {
-    width: 30px;
-    margin-right: 15px;
-}
-
-footer .footLinks {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
-footer .footLinks .medSos {
-    cursor: default;
-    color: #FFF;
-}
-
-footer .footLinks .links {
+main .sambutan {
+    width: 100%;
+    padding: 30px;
+    margin: 25px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 60px;
+    border-radius: 15px;
 }
 
-footer .footLinks a {
-    color: #CCC;
-    transition: .2s ease-in-out;
+main .ketua {
+    background: linear-gradient(to left, #EFEFEF, #EFEFEF, #EFEFEF, #D3506B);
 }
-footer .footLinks a:hover {
-    color: #4169E1;
-}
-
-footer .footLinks i {
-    color: #4169E1;
+main .wakil {
+    background: linear-gradient(to right, #EFEFEF, #EFEFEF, #EFEFEF, #D3506B);
 }
 
-footer .footLinks sup {
-    cursor: default;
-    color: #4169E1;
-    font-size: 10px;
-    font-style: italic;
+main .sambutan .sambutanText {
+    width: 67%;
+    text-align: justify;
 }
 
-footer .footHakCipta {
-    padding: 20px 0;
-    margin-top: 100px;
-    border-top: 1px solid #666;
+main .sambutan .sambutanText .jabatan {
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #FFF9F6;
+    background: linear-gradient(to bottom right, #D3506B, #FFB792);
+    border-radius: 5px;
 }
 
-footer .footHakCipta p {
-    cursor: default;
-    color: #AAA;
-    font-size: 14px;
+main .sambutan .sambutanPict {
+    width: 27%;
 }
 
-footer .footHakCipta a {
-    color: #FFF;
-    font-weight: 500;
-    transition: .2s ease-in-out;
-}
-footer .footHakCipta a:hover {
-    color: #4169E1;
+main .sambutan .sambutanPict img {
+    width: 100%;
+    border-radius: 100%;
 }
