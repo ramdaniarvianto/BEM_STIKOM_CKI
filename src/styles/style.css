@@ -66,7 +66,7 @@ header {
     padding: 0 50px;
 }
 
-/* TEKS */
+/* KABINET HEAD */
 header .kabinet {
     padding: 80px 0;
     display: flex;
@@ -76,7 +76,7 @@ header .kabinet {
 }
 
 header .kabinet h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #444;
 }
 header .kabinet h1 {
@@ -95,246 +95,165 @@ header .full-team img {
 
 /* MAIN */
 main {
-    width: 100%;
+    padding: 100px 0 0 0;
 }
 
-/* SAMBUTAN HEAD */
-main .sambutan {
-    padding: 80px 90px;
-    margin: 80px 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    background: linear-gradient(to bottom right, #FFB792, #D3506B, #D3506B, #FFB792);
-    border-radius: 20px;
+/* MAIN HEAD */
+main .main-head h2 {
+    font-size: 3rem;
+}
+main .main-head p {
+    font-size: 1.1rem;
 }
 
-main .sambutan .sambutan-head {
+main .mh-sambut {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+}
+main .mh-sambut h2 {
     color: #FFF;
 }
-
-main .sambutan .sambutan-head h2 {
-    font-size: 3.5rem;
+main .mh-sambut p {
+    color: #DEDEDE;
+    text-align: center;
 }
-main .sambutan .sambutan-head p {
-    font-size: 1.11rem;
+/* SAMBUTAN CONTAINER */
+main .sambutan-container {
+    padding: 50px 80px;
+    margin: 0 50px;
+    background-image: url(/src/images/texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 20px;
 }
 
-/* SAMBUTAN BEM */
-main .sambutan .sambutan-bem-between {
+/* SAMBUTAN BOX */
+main .sambutan-box {
+    margin-top: 50px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
 }
 
 main .sambutan-bem {
-    width: 45%;
+    width: 46%;
     padding: 35px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 15px;
-    text-align: justify;
-    background-color: rgba(239, 239, 239, 0.32);
-    backdrop-filter: blur(100px);
+    align-self: self-start;
+    gap: 10px;
+    background: linear-gradient(to bottom left, #ffb69282, #00000030, #00000030, #FFB792);
+    backdrop-filter: blur(5px);
     border-radius: 20px;
 }
 
-main .sambutan .sambutan-bem .sambutan-bem-gambar img {
+main .sambutan-box .sambutan-bem .sambutan-bem-gambar img {
     width: 250px;
     border-radius: 100%;
 }
 
-main .sambutan .sambutan-bem-jabatan {
-    padding: 5px 35px;
-    font-size: 1.15rem;
-    font-weight: 500;
+main .sambutan-box .sambutan-bem .sambutan-bem-jabatan {
+    padding: 2.5px 25px;
     color: #FFF;
-    background: linear-gradient(to right, #D3506B, #FFB792);
+    background-color: #FFB69280;
     border-radius: 5px;
 }
+main .sambutan-box .sambutan-bem .sambutan-bem-jabatan h3 {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 1.15rem;
+}
 
-main .sambutan-bem-teks::-webkit-scrollbar {
-    width: 0px; /* LEBAR SCROLL BAR SAMBUTAN */
+main .sambutan-box .sambutan-bem .sambutan-bem-teks {
+    color: #DEDEDE;
+    text-align: center;
 }
-main .sambutan-bem-teks::-webkit-scrollbar-track {
-    background-color: transparent; /* WARNA TRACK SCROLL BAR SAMBUTAN */
+
+/* INPUT HIDDEN */
+main .sambutan-bem input {
+    display: none;
 }
-main .sambutan-bem-teks::-webkit-scrollbar-thumb {
-    background-color: transparent; /* WARNA SCROLL SAMBUTAN */
-}
-main .sambutan-bem-teks {
-    max-height: 150px;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
+/* TEKS HIDDEN */
+main .sambutan-box .sambutan-bem .sambutan-bem-teks .sambutan-bem-teks-hidden {
+    margin-top: 30px;
+    display: none;
+    text-align: start;
     color: #FFF;
 }
-
-/* KEMENTRIAN */
-main .kementrian {
-    padding: 60px 50px;
-    background-color: #DEDEDE;
+/* TEKS SHOW */
+/* TS-PRESMA */
+#check-p:checked ~ .sambutan-bem-teks-hidden {
+    display: block;
+}
+/* TS-WAPRESMA */
+#check-wp:checked ~ .sambutan-bem-teks-hidden {
+    display: block;
 }
 
-/* KEMENTRIAN HEAD */
-main .kementrian .kementrian-head {
+/* LABEL */
+main .sambutan-box .sambutan-bem .sambutan-bem-label label {
+    cursor: pointer;
+    font-size: 5px;
+    padding: 0 100px;
+    background: linear-gradient(to right, #FFDCCA, #FFA1B4);
+    border-radius: 100px;
+}
+
+main .mh-kementrian {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+main .mh-kementrian h2 {
+    color: #000;
+}
+main .mh-kementrian p {
+    color: #666;
     text-align: center;
 }
-
-/* KEMENTRIAN BEM */
-main .kementrian .kementrian-bem {
-    /* background-color: red; */
-    margin-top: 50px;
-    padding: 0 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
+/* KEMENTRIAN CONTAINER */
+main .kementrian-container {
+    margin-top: 100px;
+    padding: 100px 50px;
+    background-color: #CCC;
 }
 
-main .kementrian .kementrian-bem .kementrian-bem-divisi {
-    padding: 15px 30px;
-    background: linear-gradient(to right, #D3506B, #D3506B, #FFB792);
+/* KEMENTRIAN BOX */
+main .kementrian-box {
+    padding: 50px 180px;
+    background-color: #DDD;
+    border-radius: 20px;
+}
+
+/* KEMENTRIAN DIVISI */
+main .kementrian-container .kementrian-divisi {
+    margin: 50px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .kementrian-container .kementrian-divisi .divisi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #EAEAEA;
     border-radius: 10px;
 }
 
-main .kementrian .kementrian-bem .kementrian-bem-divisi h2 {
+main .kementrian-container .kementrian-divisi .divisi h3 {
+    font-size: 1.5rem;
     font-weight: 500;
-    color: #FFF;
 }
 
-main .kementrian .kementrian-head h2 {
-    text-align: center;
-    font-size: 3.5rem;
-    color: #D3506B;
-}
-main .kementrian .kementrian-head p {
-    color: #666;
-}
-
-main .kementrian .kementrian-jumlah {
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main .kementrian .kementrian-jumlah .jumlah-orang {
-    width: 22%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #D3506B;
-}
-
-main .kementrian .kementrian-jumlah .jumlah-orang h3 {
-    font-size: 4rem;
-}
-main .kementrian .kementrian-jumlah .jumlah-orang p {
-    font-size: 1.1rem;
-    margin-top: -10px;
-}
-
-/* FOOTER */
-footer {
-    padding: 100px 50px 50px 50px;
-    font-family: 'Manrope';
-}
-
-/* FOOTER INFO */
-.footer-info {
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
-
-/* FOOTER INFO BEM */
-footer .footer-info .footer-info-bem {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-footer .footer-info .footer-info-bem p {
-    color: #666;
-    line-height: 1.5;
-}
-
-footer .footer-info .footer-info-bem-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-footer .footer-info .footer-info-bem h2 {
-    font-weight: 800;
-}
-
-footer .footer-info .footer-info-bem img {
-    width: 60px;
-}
-
-/* FOOTER INFO KONTAK */
-footer .footer-info .footer-info-kontak {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-footer .footer-info .footer-info-kontak table th, td {
-    padding: 0 4px;
-}
-
-footer .footer-info .footer-info-kontak table th {
-    vertical-align: top;
-    color: #D3506B;
-}
-
-footer .footer-info .footer-info-kontak table td, a {
-    color: #666;
-    line-height: 1.5;
-    transition: .2s ease-in-out;
-}
-footer .footer-info .footer-info-kontak table td:hover, a:hover {
-    color: #D3506B;
-}
-
-/* FOOTER HAK CIPTA */
-footer .footer-hak-cipta {
-    border-top: 1px solid #CCC;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .footer-hak-cipta p, .footer-hak-cipta .footer-media-sosial {
-    margin-top: 20px;
-}
-
-footer .footer-hak-cipta a {
-    color: #D3506B;
-    font-weight: 600;
-}
-
-/* FOOTER MEDIA SOSIAL */
-footer .footer-hak-cipta .footer-media-sosial ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
+main .kementrian-container .kementrian-divisi .divisi i {
+    font-size: 1.5rem;
+    border-radius: 100px;
 }
