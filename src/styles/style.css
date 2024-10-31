@@ -7,20 +7,21 @@
 }
 
 body {
-    min-height: 100vh;
     font-family: 'Poppins';
     background-color: #EFEFEF;
 }
 
 /* NAVBAR */
 nav {
+    z-index: 999;
     top: 0;
     position: sticky;
-    padding: 20px 50px;
+    padding: 18px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(239, 239, 239, 0.89);
+    font-family: 'Manrope';
+    background-color: rgba(239, 239, 239, 0.85);
     backdrop-filter: blur(5px);
 }
 
@@ -28,13 +29,10 @@ nav .nav-logo a {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1rem;
-    font-weight: 800;
-    color: #D3506B;
 }
 
 nav .nav-logo h2 {
-    font-family: 'Manrope';
+    color: #444;
     font-weight: 800;
 }
 
@@ -44,18 +42,22 @@ nav .nav-logo img {
 
 nav ul {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 20px;
 }
 
 nav ul a {
-    color: #D3506B;
-    font-family: 'Manrope';
+    padding: 5px 0;
     font-size: 1.05rem;
     font-weight: 600;
+    color: #444;
     transition: .2s ease-in-out;
 }
 nav ul a:hover {
-    color: #FFB792;
+    color: #D3506B;
+}
+nav ul a.aktif {
+    color: #D3506B;
 }
 
 /* HEADER */
@@ -64,82 +66,240 @@ header {
     padding: 0 50px;
 }
 
+/* TEKS */
 header .kabinet {
-    text-align: center;
-    padding: 50px 0;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-header .kabinet h3 {
-    font-size: 2.5rem;
-    color: #444;
-}
 header .kabinet h2 {
     font-size: 3.5rem;
+    color: #444;
+}
+header .kabinet h1 {
     margin-top: -20px;
-    background: linear-gradient(to right, #D3506B, #FFB792);
+    font-size: 4rem;
+    background: linear-gradient(to right, #FFB792, #D3506B, #FFB792);
     background-clip: text;
     color: transparent;
 }
 
-header .fullteam {
-    padding: 0 0 50px 0;
-}
-
-header .fullteam img {
+/* GAMBAR FULL TEAM */
+header .full-team img {
     width: 100%;
     border-radius: 20px;
 }
 
 /* MAIN */
 main {
-    padding: 0 50px;
-    background-color: #FFF;
-}
-
-main h2 {
-    text-align: center;
-    padding: 25px 0 0 0;
-    font-size: 2.5rem;
-    color: #444;
-}
-
-main .sambutan {
     width: 100%;
-    padding: 30px;
-    margin: 25px 0;
+}
+
+/* SAMBUTAN HEAD */
+main .sambutan {
+    padding: 80px 90px;
+    margin: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background: linear-gradient(to bottom right, #FFB792, #D3506B, #D3506B, #FFB792);
+    border-radius: 20px;
+}
+
+main .sambutan .sambutan-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+}
+
+main .sambutan .sambutan-head h2 {
+    font-size: 3.5rem;
+}
+main .sambutan .sambutan-head p {
+    font-size: 1.11rem;
+}
+
+/* SAMBUTAN BEM */
+main .sambutan .sambutan-bem-between {
     display: flex;
     justify-content: space-between;
-    border-radius: 15px;
 }
 
-main .ketua {
-    background: linear-gradient(to left, #EFEFEF, #EFEFEF, #EFEFEF, #D3506B);
-}
-main .wakil {
-    background: linear-gradient(to right, #EFEFEF, #EFEFEF, #EFEFEF, #D3506B);
-}
-
-main .sambutan .sambutanText {
-    width: 67%;
+main .sambutan-bem {
+    width: 45%;
+    overflow-y: auto;
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     text-align: justify;
+    background-color: rgba(239, 239, 239, 0.32);
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
 }
 
-main .sambutan .sambutanText .jabatan {
-    padding: 5px 15px;
-    margin-bottom: 15px;
-    display: inline-block;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #FFF9F6;
-    background: linear-gradient(to bottom right, #D3506B, #FFB792);
+main .sambutan .sambutan-bem .sambutan-bem-gambar img {
+    width: 250px;
+    border-radius: 100%;
+}
+
+main .sambutan .sambutan-bem-jabatan {
+    padding: 5px 35px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #FFF;
+    background: linear-gradient(to right, #D3506B, #FFB792);
     border-radius: 5px;
 }
 
-main .sambutan .sambutanPict {
-    width: 27%;
+main .sambutan-bem-teks::-webkit-scrollbar {
+    width: 0px; /* LEBAR SCROLL BAR SAMBUTAN */
+}
+main .sambutan-bem-teks::-webkit-scrollbar-track {
+    background-color: transparent; /* WARNA TRACK SCROLL BAR SAMBUTAN */
+}
+main .sambutan-bem-teks::-webkit-scrollbar-thumb {
+    background-color: transparent; /* WARNA SCROLL SAMBUTAN */
+}
+main .sambutan-bem-teks {
+    max-height: 150px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #FFF;
 }
 
-main .sambutan .sambutanPict img {
-    width: 100%;
-    border-radius: 100%;
+/* KEMENTRIAN */
+main .kementrian {
+    padding: 60px 50px;
+    background-color: #DEDEDE;
+}
+
+main .kementrian h2 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+main .kementrian .kementrian-jumlah {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .kementrian .kementrian-jumlah .jumlah-orang {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .kementrian .kementrian-jumlah .jumlah-orang h3 {
+    font-size: 4rem;
+}
+main .kementrian .kementrian-jumlah .jumlah-orang p {
+    font-size: 1.1rem;
+    margin-top: -10px;
+}
+
+/* FOOTER */
+footer {
+    padding: 100px 50px 50px 50px;
+    font-family: 'Manrope';
+}
+
+/* FOOTER INFO */
+.footer-info {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/* FOOTER INFO BEM */
+footer .footer-info .footer-info-bem {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer .footer-info .footer-info-bem p {
+    color: #666;
+    line-height: 1.5;
+}
+
+footer .footer-info .footer-info-bem-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-info .footer-info-bem h2 {
+    font-weight: 800;
+}
+
+footer .footer-info .footer-info-bem img {
+    width: 60px;
+}
+
+/* FOOTER INFO KONTAK */
+footer .footer-info .footer-info-kontak {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .footer-info .footer-info-kontak table th, td {
+    padding: 0 4px;
+}
+
+footer .footer-info .footer-info-kontak table th {
+    vertical-align: top;
+    color: #D3506B;
+}
+
+footer .footer-info .footer-info-kontak table td, a {
+    color: #666;
+    line-height: 1.5;
+    transition: .2s ease-in-out;
+}
+footer .footer-info .footer-info-kontak table td:hover, a:hover {
+    color: #D3506B;
+}
+
+/* FOOTER HAK CIPTA */
+footer .footer-hak-cipta {
+    border-top: 1px solid #CCC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-hak-cipta p, .footer-hak-cipta .footer-media-sosial {
+    margin-top: 20px;
+}
+
+footer .footer-hak-cipta a {
+    color: #D3506B;
+    font-weight: 600;
+}
+
+/* FOOTER MEDIA SOSIAL */
+footer .footer-hak-cipta .footer-media-sosial ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
 }
