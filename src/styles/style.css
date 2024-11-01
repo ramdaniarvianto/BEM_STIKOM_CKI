@@ -281,79 +281,52 @@ main .kementrian-container .kementrian-jumlah .jumlah p {
     margin-top: -20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    nav {
-        display: flex;
-        justify-content: center;
-    }
-    /* BLM SELESAI, SIDEBAR */
-    nav ul {
-        display: none;
-    }
+/* FOOTER */
+footer {
+    padding: 80px 50px 30px 50px;
+}
 
-    /* HEADER */
-    header {
-        padding: 0 15px;
-    }
+/* FOOTER INFO */
+footer .footer-info {
+    margin-bottom: 20px;
+}
 
-    /* KABINET HEAD */
-    header .kabinet {
-        padding: 60px 0;
-    }
+footer .footer-info .footer-bem {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Manrope';
+}
 
-    header .kabinet h2 {
-        font-size: 3rem;
-    }
+footer .footer-info .footer-bem img {
+    width: 60px;
+}
 
-    header .kabinet h1 {
-        margin-top: 1px;
-        font-size: 3rem;
-        text-align: center;
-        line-height: 1;
-    }
+footer .footer-info .footer-bem h2 {
+    font-weight: 800;
+}
 
-    /* MAIN */
-    main {
-        padding: 60px 0 0 0;
-    }
+footer .footer-info .footer-bem p  {
+    color: #666;
+    font-size: 0.9rem;
+}
 
-    /* SAMBUTAN CONTAINER */
-    main .sambutan-container {
-        margin: 0 15px;
-        padding: 20px 50px;
-    }
+footer .footer-info .footer-bem-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-    /* SAMBUTAN BOX */
-    main .sambutan-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-    }
-
-    main .sambutan-bem {
-        width: 100%;
-    }
-
-    main .mh-kementrian p {
-        line-height: 1.4;
-    }
-    /* KEMENTRIAN CONTAINER */
-    main .kementrian-container {
-        margin-top: 70px;
-        padding: 70px 15px;
-    }
-
-    /* KEMENTRIAN BOX */
-    main .kementrian-box {
-        padding: 40px 35px;
-    }
-
-    /* KEMENTRIAN JUMLAH */
-    main .kementrian-container .kementrian-jumlah .jumlah h3 {
-        font-size: 3.5rem;
-        font-weight: 600;
-    }
+/* FOOTER HAK CIPTA */
+footer .footer-hak-cipta {
+    border-top: 1px solid #BBB;
+}
+footer .footer-hak-cipta p {
+    margin-top: 20px;
+    color: #666;
+}
+footer .footer-hak-cipta span {
+    color: #D3506B;
 }
