@@ -253,11 +253,6 @@ main .kementrian-container .kementrian-divisi .divisi h3 {
     font-weight: 500;
 }
 
-main .kementrian-container .kementrian-divisi .divisi i {
-    font-size: 1.5rem;
-    border-radius: 100px;
-}
-
 /* KEMENTRIAN JUMLAH */
 main .kementrian-container .kementrian-jumlah {
     display: flex;
@@ -280,4 +275,81 @@ main .kementrian-container .kementrian-jumlah .jumlah h3 {
 main .kementrian-container .kementrian-jumlah .jumlah p {
     font-size: 1rem;
     margin-top: -20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    /* BLM SELESAI, SIDEBAR */
+    nav ul {
+        display: none;
+    }
+
+    /* HEADER */
+    header {
+        padding: 0 15px;
+    }
+
+    /* KABINET HEAD */
+    header .kabinet {
+        padding: 60px 0;
+    }
+
+    header .kabinet h2 {
+        font-size: 3rem;
+    }
+
+    header .kabinet h1 {
+        margin-top: 1px;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1;
+    }
+
+    /* MAIN */
+    main {
+        padding: 60px 0 0 0;
+    }
+
+    /* SAMBUTAN CONTAINER */
+    main .sambutan-container {
+        margin: 0 15px;
+        padding: 20px 50px;
+    }
+
+    /* SAMBUTAN BOX */
+    main .sambutan-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    main .sambutan-bem {
+        width: 100%;
+    }
+
+    main .mh-kementrian p {
+        line-height: 1.4;
+    }
+    /* KEMENTRIAN CONTAINER */
+    main .kementrian-container {
+        margin-top: 70px;
+        padding: 70px 15px;
+    }
+
+    /* KEMENTRIAN BOX */
+    main .kementrian-box {
+        padding: 40px 35px;
+    }
+
+    /* KEMENTRIAN JUMLAH */
+    main .kementrian-container .kementrian-jumlah .jumlah h3 {
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
 }
