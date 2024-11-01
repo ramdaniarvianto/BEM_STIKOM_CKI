@@ -5,6 +5,10 @@
     text-decoration: none;
     list-style: none;
 }
+*::selection {
+    color: #FFB792;
+    background-color: #D3506B;
+}
 
 body {
     font-family: 'Poppins';
