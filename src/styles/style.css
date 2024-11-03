@@ -111,7 +111,8 @@ main .sambutan-container {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background-image: url(/src/images/texture.jpg);
+    /* background-image: url(/src/images/texture.jpg); */
+    background: linear-gradient(#FFB792, #D3506B, #D3506B, #FFB792);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

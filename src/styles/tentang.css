@@ -221,7 +221,7 @@ main .filosofi-warna-container .warna-filosofi {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #DDD;
+    background: linear-gradient(to bottom right, #FFFFFF, #E0E0E0, #FFFFFF);
     border-radius: 10px;
 }
 main .filosofi-warna-container .warna-filosofi-container {
