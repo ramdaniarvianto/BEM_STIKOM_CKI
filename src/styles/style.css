@@ -5,328 +5,199 @@
     text-decoration: none;
     list-style: none;
 }
-*::selection {
-    color: #FFB792;
-    background-color: #D3506B;
-}
 
 body {
     font-family: 'Poppins';
-    background-color: #EFEFEF;
+    background-color: #EEE;
 }
 
-/* NAVBAR */
+/* NAVIGASI */
 nav {
     z-index: 999;
     top: 0;
     position: sticky;
-    padding: 18px 50px;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Manrope';
-    background-color: rgba(239, 239, 239, 0.85);
-    backdrop-filter: blur(5px);
+    background-color: #EEEEEEAA;
+    backdrop-filter: blur(10px);
 }
-
+/* NAV LOGO */
 nav .nav-logo a {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: #333;
+    transition: all .2s ease-in-out;
 }
-
-nav .nav-logo h2 {
-    color: #444;
-    font-weight: 800;
+nav .nav-logo a:hover {
+    color: #666;
 }
-
 nav .nav-logo img {
     width: 60px;
 }
-
-nav ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-nav ul a {
-    padding: 5px 0;
-    font-size: 1.05rem;
+nav .nav-logo h2 {
     font-weight: 600;
-    color: #444;
-    transition: .2s ease-in-out;
 }
-nav ul a:hover {
+/* NAV MENU */
+nav .nav-menu ul {
+    display: flex;
+    gap: 10px;
+}
+nav .nav-menu a {
+    padding: 5px 10px;
+    color: #333;
+    transition: all .2s ease-in-out;
+}
+nav .nav-menu a:hover {
     color: #D3506B;
 }
-nav ul a.aktif {
+nav .nav-menu a.aktif {
     color: #D3506B;
 }
 
 /* HEADER */
 header {
-    width: 100%;
-    padding: 0 50px;
+    padding: 40px 50px;
+    background: radial-gradient(#FFB79288, #EEE, #EEE);
 }
-
-/* KABINET HEAD */
-header .kabinet {
-    padding: 80px 0;
+header .head-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+/* KABINET */
+header .head-kabinet {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-header .kabinet h2 {
-    font-size: 4rem;
-    color: #444;
+header .head-kabinet .nama-kabinet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-header .kabinet h1 {
-    margin-top: -20px;
-    font-size: 4rem;
+header .head-kabinet .kabinet {
+    font-size: 2rem;
+    color: #333;
+}
+header .head-kabinet .nama-kabinet {
+    font-size: 3rem;
     background: linear-gradient(to right, #FFB792, #D3506B, #FFB792);
     background-clip: text;
     color: transparent;
 }
-
-/* GAMBAR FULL TEAM */
-header .full-team img {
+header .head-kabinet .nama-kabinet h2:last-child {
+    margin-top: -40px;
+}
+/* BEM 2024 */
+header .head-bem img {
     width: 100%;
     border-radius: 20px;
 }
 
 /* MAIN */
 main {
-    padding: 100px 0 0 0;
+    padding: 40px 0;
+    background-color: #DDD;
 }
-
-/* MAIN HEAD */
-main .main-head h2 {
-    font-size: 3rem;
-}
-main .main-head p {
-    font-size: 1.1rem;
-}
-
-main .mh-sambut {
+/* SAMBUTAN */
+main .sambutan-container {
+    padding: 40px 50px;
+    margin: 0 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-main .mh-sambut h2 {
-    color: #FFF;
-}
-main .mh-sambut p {
-    color: #DEDEDE;
-    text-align: center;
-}
-/* SAMBUTAN CONTAINER */
-main .sambutan-container {
-    padding: 50px 80px;
-    margin: 0 50px;
+    gap: 50px;
     background-image: url(/src/images/texture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     border-radius: 20px;
 }
-
-/* SAMBUTAN BOX */
-main .sambutan-box {
-    margin-top: 50px;
-    margin-bottom: 30px;
+/* SAMBUTAN HEAD */
+main .sambutan-head {
+    text-align: center;
+}
+main .sambutan-head h2 {
+    font-size: 3rem;
+    color: #FFF;
+}
+main .sambutan-head p {
+    color: #DFDFDF;
+}
+/* SAMBUTAN GROUP */
+main .sambutan-group {
     display: flex;
     justify-content: space-between;
 }
-
-main .sambutan-bem {
-    width: 46%;
-    padding: 35px 40px;
+/* SAMBUTAN CARD */
+main .sambutan-card {
+    width: 48%;
+    padding: 25px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: self-start;
-    gap: 10px;
-    background: linear-gradient(to bottom left, #ffb69282, #00000030, #00000030, #FFB792);
-    backdrop-filter: blur(5px);
-    border-radius: 20px;
+    gap: 20px;
+    border: 1.5px solid #FFB79266;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
 }
-
-main .sambutan-box .sambutan-bem .sambutan-bem-gambar img {
+main .sambutan-card img {
     width: 250px;
     border-radius: 100%;
 }
-
-main .sambutan-box .sambutan-bem .sambutan-bem-jabatan {
-    padding: 2.5px 25px;
+/* SAMBUTAN CARD PRESMA */
+main .presma {
+    background: linear-gradient(to bottom right, #FFB69277, #D3506B88, #D3506B99, #FFB792AA);
+}
+/* SAMBUTAN CARD WAPRESMA */
+main .wapresma {
+    background: linear-gradient(to bottom left, #FFB69277, #D3506B88, #D3506B99, #FFB792AA);
+}
+/* SAMBUTAN JABATAN */
+main .sambutan-jabatan {
+    padding: 4px 30px;
+    font-size: 1.15rem;
+    font-weight: 600;
     color: #FFF;
-    background-color: #FFB69280;
+    background-color: #FFB79266;
     border-radius: 5px;
 }
-main .sambutan-box .sambutan-bem .sambutan-bem-jabatan h3 {
-    font-family: 'Manrope';
-    font-weight: 500;
-    font-size: 1.15rem;
-}
-
-main .sambutan-box .sambutan-bem .sambutan-bem-teks {
-    color: #DEDEDE;
+/* SAMBUTAN TEKS */
+main .sambutan-card .sambutan-teks {
     text-align: center;
+    color: #DFDFDF;
 }
-
-/* INPUT HIDDEN */
-main .sambutan-bem input {
-    display: none;
-}
-
-/* TEKS HIDDEN */
-main .sambutan-box .sambutan-bem .sambutan-bem-teks .sambutan-bem-teks-hidden {
+/* SAMBUTAN TEKS HIDDEN */
+main .sambutan-card .sambutan-teks-hidden {
     margin-top: 30px;
     display: none;
     text-align: start;
     color: #FFF;
 }
-/* TEKS SHOW */
-/* TS-PRESMA */
-#check-p:checked ~ .sambutan-bem-teks-hidden {
+/* JIKA TOGGLE DI TEKAN */
+#toggle-teks-p:checked ~ .sambutan-teks-hidden {
     display: block;
 }
-/* TS-WAPRESMA */
-#check-wp:checked ~ .sambutan-bem-teks-hidden {
+#toggle-teks-wp:checked ~ .sambutan-teks-hidden {
     display: block;
 }
-
-/* LABEL */
-main .sambutan-box .sambutan-bem .sambutan-bem-label label {
+/* SAMBUTAN HIDDEN CHECKBOX */
+main .sambutan-card #toggle-teks-p {
+    display: none;
+}
+main .sambutan-card #toggle-teks-wp {
+    display: none;
+}
+/* SAMBUTAN TOGGLE */
+main .sambutan-toggle label {
     cursor: pointer;
-    font-size: 5px;
     padding: 0 100px;
-    background: linear-gradient(to right, #FFDCCA, #FFA1B4);
-    border-radius: 100px;
-}
-
-main .mh-kementrian {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-main .mh-kementrian h2 {
-    color: #000;
-}
-main .mh-kementrian p {
-    color: #666;
-    text-align: center;
-}
-/* KEMENTRIAN CONTAINER */
-main .kementrian-container {
-    margin-top: 100px;
-    padding: 100px 50px;
-    background-color: #CCC;
-}
-
-/* KEMENTRIAN BOX */
-main .kementrian-box {
-    padding: 50px 180px;
-    background-color: #DDD;
-    border-radius: 20px;
-}
-
-/* KEMENTRIAN DIVISI */
-main .kementrian-container .kementrian-divisi {
-    margin: 50px 0 40px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-main .kementrian-container .kementrian-divisi .divisi {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background-color: #EAEAEA;
-    border-radius: 10px;
-}
-
-main .kementrian-container .kementrian-divisi .divisi h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-/* KEMENTRIAN JUMLAH */
-main .kementrian-container .kementrian-jumlah {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main .kementrian-container .kementrian-jumlah .jumlah {
-    margin-bottom: 10px;
-    width: 24%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-main .kementrian-container .kementrian-jumlah .jumlah h3 {
-    font-size: 4rem;
-}
-main .kementrian-container .kementrian-jumlah .jumlah p {
-    font-size: 1rem;
-    margin-top: -20px;
-}
-
-/* FOOTER */
-footer {
-    padding: 80px 50px 30px 50px;
-}
-
-/* FOOTER INFO */
-footer .footer-info {
-    margin-bottom: 20px;
-}
-
-footer .footer-info .footer-bem {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    font-family: 'Manrope';
-}
-
-footer .footer-info .footer-bem img {
-    width: 60px;
-}
-
-footer .footer-info .footer-bem h2 {
-    font-weight: 800;
-}
-
-footer .footer-info .footer-bem p  {
-    color: #666;
-    font-size: 0.9rem;
-}
-
-footer .footer-info .footer-bem-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* FOOTER HAK CIPTA */
-footer .footer-hak-cipta {
-    border-top: 1px solid #BBB;
-}
-footer .footer-hak-cipta p {
-    margin-top: 20px;
-    color: #666;
-}
-footer .footer-hak-cipta span {
-    color: #D3506B;
+    font-size: 5px;
+    background: linear-gradient(to right, #FFB792EE, #FFC3CDEE);
+    border-radius: 50px;
 }

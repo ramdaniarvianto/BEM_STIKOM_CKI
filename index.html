@@ -16,181 +16,121 @@
     <title>BEM STIKOM CKI 2024</title>
 </head>
 <body>
-    <!-- NAVBAR -->
+    <!-- NAVIGASI -->
     <nav>
-        <!-- NAV LOGO -->
+        <!-- LOGO -->
         <div class="nav-logo">
             <a href="index.html">
                 <img src="/src/images/logobem.png">
                 <h2>BEM STIKOM CKI</h2>
             </a>
         </div>
-        <!-- NAV MENU -->
-        <ul>
-            <li><a href="index.html" class="aktif">Home</a></li>
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Kabinet</a></li>
-            <li><a href="#">Artikel</a></li>
-        </ul>
+        <!-- MENU -->
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="aktif">Home</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="">Kabinet</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- HEADER -->
     <header>
-        <!-- NAMA KABINET -->
-        <div class="kabinet">
-            <h2>Kabinet</h2>
-            <h1>Dharma Satvavira Dialektika</h1>
-        </div>
-        <!-- GAMBAR FULL TEAM -->
-        <div class="full-team">
-            <img src="/src/images/fullteamhome.png">
+        <div class="head-container">
+            <!-- KABINET -->
+            <div class="head-kabinet">
+                <div class="kabinet">
+                    <h2>KABINET</h2>
+                </div>
+                <div class="nama-kabinet">
+                    <h2>DHARMA SATVAVIRA</h2>
+                    <h2>DIALEKTIKA</h2>
+                </div>
+            </div>
+            <!-- BEM 2024 -->
+            <div class="head-bem">
+                <img src="/src/images/fullteamhome.png">
+            </div>
         </div>
     </header>
 
     <!-- MAIN -->
     <main>
-        <div class="sambutan-container">
-            <!-- HEAD SAMBUTAN -->
-            <div class="main-head mh-sambut">
-                <h2>Sambutan</h2>
-                <p>Sambutan dari Presiden Mahasiswa dan Wakil Presiden Mahasiswa BEM STIKOM CKI, Kabinet Dharma Satvavira Dialektika</p>
-            </div>
-            <!-- SAMBUTAN BOX -->
-            <div class="sambutan-box">
-                <!-- PRESMA RAJA -->
-                <div class="sambutan-bem">
-                    <!-- SAMBUTAN GAMBAR -->
-                    <div class="sambutan-bem-gambar">
-                        <img src="/src/images/rajahome.jpg">
-                    </div>
-                    <!-- SAMBUTAN JABATAN -->
-                    <div class="sambutan-bem-jabatan">
-                        <h3>Presma</h3>
-                    </div>
-                    <!-- SAMBUTAN TEKS -->
-                    <div class="sambutan-bem-teks">
-                        <!-- HIDDEN INPUT -->
-                        <input type="checkbox" id="check-p">
+        <div class="main-container">
+            <div class="sambutan-container">
+                <div class="sambutan-head">
+                    <h2>SAMBUTAN</h2>
+                    <p>Sambutan dari Presiden Mahasiswa dan Wakil Presiden Mahasiswa Sekolah Tinggi Ilmu Komputer Cipta Karya Informatika, Badan Eksekutif Mahasiswa Kabinet Dharma Satvavira Dialektika</p>
+                </div>
+                <div class="sambutan-group">
+                    <!-- SAMBUTAN PRESMA -->
+                    <div class="sambutan-card presma">
+                        <!-- GAMBAR -->
+                        <div class="sambutan-gambar">
+                            <img src="/src/images/rajahome.jpg">
+                        </div>
+                        <!-- JABATAN -->
+                        <div class="sambutan-jabatan">
+                            <p>Presma</p>
+                        </div>
+                        <!-- TEKS -->
+                        <div class="sambutan-teks">
+                            <!-- HIDDEN CHECKBOX -->
+                            <input type="checkbox" id="toggle-teks-p">
+                            <p>Presiden Mahasiswa</p>
+                            <p>Danendra Satriyohadi Notonegoro</p>
+                            <div class="sambutan-teks-hidden">
+                                <p>
+                                    Salam Perubahan! <br><br>
 
-                        <p>Presiden Mahasiswa</p>
-                        <p>Danendra Satriyohadi Notonegoro</p>
-                        <!-- HIDDEN TEKS -->
-                        <div class="sambutan-bem-teks-hidden">
-                            <p>
-                                Salam Perubahan!
-                                <br><br>
-                                Mahasiswa sekalian, di tangan kita, perubahan adalah sebuah kepastian. Dalam setiap langkah dan suara yang kita lantangkan, terletak tanggung jawab besar untuk masa depan yang kita cita-citakan. Bersama, kita adalah kekuatan yang tak tergoyahkan, sebuah bara yang terus menyala, membakar semangat untuk terus belajar, bergerak, dan mengabdi.
-                                <br><br>
-                                Sebagai Presiden Mahasiswa, saya berdiri di sini bukan hanya sebagai pemimpin, tetapi sebagai kawan seperjuangan. Mari jadikan BEM ini bukan sekedar organisasi, melainkan sebuah ruang hidup, tempat kita memupuk ide-ide segar, memperjuangkan aspirasi, dan bersama-sama menciptakan perubahan nyata. Karena di balik setiap kunjungan dan aksi kita, terukir sejarah yang akan diwariskan.
-                                <br><br>
-                                Kepada setiap jiwa yang haus akan kemajuan, teruslah bergerak dan menginspirasi. Hidup Mahasiswa!
-                            </p>
+                                    Mahasiswa sekalian, di tangan kita, perubahan adalah sebuah kepastian. Dalam setiap langkah dan suara yang kita lantangkan, terletak tanggung jawab besar untuk masa depan yang kita cita-citakan. Bersama, kita adalah kekuatan yang tak tergoyahkan—sebuah bara yang terus menyala, membakar semangat untuk terus belajar, bergerak, dan mengabdi. <br><br>
+
+                                    Sebagai Presiden Mahasiswa, saya berdiri di sini bukan hanya sebagai pemimpin, tetapi sebagai kawan seperjuangan. Mari jadikan BEM ini bukan sekedar organisasi, melainkan sebuah ruang hidup, tempat kita memupuk ide-ide segar, memperjuangkan aspirasi, dan bersama-sama menciptakan perubahan nyata. Karena di balik setiap kunjungan dan aksi kita, terukir sejarah yang akan diwariskan. <br><br>
+
+                                    Kepada setiap jiwa yang haus akan kemajuan, teruslah bergerak dan menginspirasi. Hidup Mahasiswa!
+                                </p>
+                            </div>
+                        </div>
+                        <!-- TOGGLE -->
+                        <div class="sambutan-toggle">
+                            <label for="toggle-teks-p">&nbsp;</label>
                         </div>
                     </div>
-                    <div class="sambutan-bem-label">
-                        <label for="check-p" class="hilang">&nbsp;</label>
-                    </div>
-                </div>
-                <!-- WAPREMA BOWO -->
-                <div class="sambutan-bem">
-                    <!-- SAMBUTAN GAMBAR -->
-                    <div class="sambutan-bem-gambar">
-                        <img src="/src/images/bowohome.png">
-                    </div>
-                    <!-- SAMBUTAN JABATAN -->
-                    <div class="sambutan-bem-jabatan">
-                        <h3>Wapresma</h3>
-                    </div>
-                    <!-- SAMBUTAN TEKS -->
-                    <div class="sambutan-bem-teks">
-                        <!-- HIDDEN INPUT -->
-                        <input type="checkbox" id="check-wp">
-
-                        <p>Wakil Presiden Mahasiswa</p>
-                        <p>Rafi Bowo Raharjo</p>
-                        <!-- HIDDEN TEKS -->
-                        <div class="sambutan-bem-teks-hidden">
-                            <p>
-                                Selamat datang di website resmi Badan Eksekutif Mahasiswa STIKOM Cipta Karya Informatika tahun 2024/2025! Kami sangat bangga dan bersemangat menyambut Anda di sini.
-                                <br><br>
-                                Sebagai wakil ketua BEM, kami berkomitmen untuk menghadirkan lingkungan kampus yang dinamis, inspiratif, dan mendukung pengembangan potensi setiap mahasiswa. Website ini adalah wujud dari komitmen kami untuk keterbukaan informasi dan sebagai sarana interaksi antara BEM, mahasiswa, dan seluruh civitas akademika STIKOM Cipta Karya Informatika.
-                                <br><br>
-                                Di sini, Anda akan menemukan berbagai informasi mengenai kegiatan, program kerja, serta wadah untuk menyalurkan ide dan aspirasi. Mari kita bersama-sama menciptakan suasana kampus yang produktif, kolaboratif, dan penuh inovasi untuk STIKOM Cipta Karya Informatika yang lebih maju.
-                            </p>
+                    <!-- SAMBUTAN WAPRESMA -->
+                    <div class="sambutan-card wapresma">
+                        <!-- GAMBAR -->
+                        <div class="sambutan-gambar">
+                            <img src="/src/images/bowohome.png">
                         </div>
-                    </div>
-                    <div class="sambutan-bem-label">
-                        <label for="check-wp" class="hilang">&nbsp;</label>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <!-- JABATAN -->
+                        <div class="sambutan-jabatan">
+                            <p>Wapresma</p>
+                        </div>
+                        <!-- TEKS -->
+                        <div class="sambutan-teks">
+                            <!-- HIDDEN CHECKBOX -->
+                            <input type="checkbox" id="toggle-teks-wp">
+                            <p>Wakil Presiden Mahasiswa</p>
+                            <p>Rafi Bowo Raharjo</p>
+                            <div class="sambutan-teks-hidden">
+                                <p>
+                                    Selamat datang di website resmi Badan Eksekutif Mahasiswa STIKOM Cipta Karya Informatika tahun 2024/2025! Kami sangat bangga dan bersemangat menyambut Anda di sini. <br><br>
 
-        <!-- KEMENTRIAN -->
-        <div class="kementrian-container">
-            <!-- KEMENTRIAN BOX -->
-            <div class="kementrian-box">
-                <!-- HEAD KEMENTRIAN -->
-                <div class="main-head mh-kementrian">
-                    <h2>Kementrian</h2>
-                    <p>Kementerian di Kabinet Dharma Satvavira Dialektika yang menjalankan tanggung jawab masing-masing, dengan tugas, program kerja, serta visi misi khusus yang selaras dengan tujuan mereka</p>
-                </div>
-                <!-- KEMENTRIAN DIVISI -->
-                <div class="kementrian-divisi">
-                    <div class="divisi">
-                        <h3>Sekretaris</h3>
-                    </div>
-                    <div class="divisi">
-                        <h3>Bendahara</h3>
-                    </div>
-                    <div class="divisi">
-                        <h3>Kementerian Humas</h3>
-                    </div>
-                    <div class="divisi">
-                        <h3>Kementerian Adkesma</h3>
-                    </div>
-                    <div class="divisi">
-                        <h3>Kementerian Depkominfo</h3>
-                    </div>
-                    <div class="divisi">
-                        <h3>Kementerian Regional UKM</h3>
-                    </div>
-                </div>
-                <!-- KEMENTRIAN JUMLAH -->
-                <div class="kementrian-jumlah">
-                    <div class="jumlah">
-                        <h3>6</h3>
-                        <p>Kementrian</p>
-                    </div>
-                    <div class="jumlah">
-                        <h3>20</h3>
-                        <p>Staff</p>
-                    </div>
-                    <div class="jumlah">
-                        <h3>50</h3>
-                        <p>Proker</p>
+                                    Sebagai wakil ketua BEM, kami berkomitmen untuk menghadirkan lingkungan kampus yang dinamis, inspiratif, dan mendukung pengembangan potensi setiap mahasiswa. Website ini adalah wujud dari komitmen kami untuk keterbukaan informasi dan sebagai sarana interaksi antara BEM, mahasiswa, dan seluruh civitas akademika STIKOM Cipta Karya Informatika. <br><br>
+
+                                    Di sini, Anda akan menemukan berbagai informasi mengenai kegiatan, program kerja, serta wadah untuk menyalurkan ide dan aspirasi. Mari kita bersama-sama menciptakan suasana kampus yang produktif, kolaboratif, dan penuh inovasi untuk STIKOM Cipta Karya Informatika yang lebih maju.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- TOGGLE -->
+                        <div class="sambutan-toggle">
+                            <label for="toggle-teks-wp">&nbsp;</label>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <!-- FOOTER INFO -->
-        <div class="footer-info">
-            <div class="footer-bem">
-                <div class="footer-bem-logo">
-                    <img src="/src/images/logobem.png">
-                    <h2>BEM STIKOM CKI</h2>
-                </div>
-                <p>Website resmi Badan Eksekutif Mahasiswa Sekolah Tinggi Ilmu Komputer Cipta Karya Informatika. Kabinet Dharma Satvavira Dialektika (2024/2025)</p>
-            </div>
-        </div>
-        <!-- FOOTER HAKCIPTA -->
-        <div class="footer-hak-cipta">
-            <p>&copy; 2024 Hak Cipta <span>Kementrian Depkominfo</span></p>
-        </div>
-    </footer>
 </body>
 </html>
