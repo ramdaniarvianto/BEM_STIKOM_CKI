@@ -97,6 +97,12 @@ nav .nav-dropdown .nav-dropdown-content {
     background-color: var(--dark-color);
     border-radius: 5px;
 }
+nav .nav-dropdown .nav-dropdown-content a {
+    color: var(--background-color);
+}
+nav .nav-dropdown .nav-dropdown-content a:hover {
+    color: var(--primary-color);
+}
 nav .nav-dropdown a {
     display: flex;
     align-items: center;
@@ -121,6 +127,7 @@ nav .sidebar-menu {
     background-color: #333333;
 }
 nav .sidebar-menu a {
+    color: var(--background-color);
     transition: .2s ease-in-out;
 }
 nav .sidebar-menu a:hover {
@@ -227,7 +234,6 @@ main .bem .card {
 
 main .bem .card .image img {
     width: 300px;
-    opacity: 0.9;
 }
 
 main .bem .card .text {
@@ -310,8 +316,14 @@ main .mentri-wrapper .divisi p {
 
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 387px) {
+    /* NAVBAR */
     nav a h2 {
         display: none;
+    }
+
+    /* HEADER */
+    header h2 {
+        font-size: 1.8rem !important;
     }
 }
 
@@ -323,6 +335,7 @@ main .mentri-wrapper .divisi p {
         padding: 1rem !important;
     }
 
+    /* HEADER */
     header h2 {
         font-size: 2rem;
     }
@@ -365,6 +378,9 @@ main .mentri-wrapper .divisi p {
         font-size: 2rem;
     }
 
+    main .kementerian .mentri-wrapper {
+        padding: 1.5rem !important;
+    }
     main .mentri-wrapper .divisi summary {
         font-size: 1.2rem;
     }
@@ -399,8 +415,8 @@ main .mentri-wrapper .divisi p {
 }
 
 @media (max-width: 992px) {
-    /* MAIN */
+    /* MAIN | KEMENTERIAN */
     main .kementerian .mentri-wrapper {
-        padding: 2.5rem 4rem;
+        padding: 2.5rem;
     }
 }

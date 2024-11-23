@@ -97,6 +97,12 @@ nav .nav-dropdown .nav-dropdown-content {
     background-color: var(--dark-color);
     border-radius: 5px;
 }
+nav .nav-dropdown .nav-dropdown-content a {
+    color: var(--background-color);
+}
+nav .nav-dropdown .nav-dropdown-content a:hover {
+    color: var(--primary-color);
+}
 nav .nav-dropdown a {
     display: flex;
     align-items: center;
@@ -121,6 +127,7 @@ nav .sidebar-menu {
     background-color: #333333;
 }
 nav .sidebar-menu a {
+    color: var(--background-color);
     transition: .2s ease-in-out;
 }
 nav .sidebar-menu a:hover {
@@ -190,9 +197,15 @@ svg {
 .breadcrumb {
     padding: 1rem 2.5rem;
 }
+.breadcrumb svg {
+    display: inline;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
 .breadcrumb a.active {
     color: var(--primary-color);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* MAIN */
