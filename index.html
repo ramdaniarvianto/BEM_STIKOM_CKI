@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML,CSS,JavaScript">
-    <meta name="author" content="Ramdani Arvianto">
+    <title>BEM STIKOM CKI 2024</title>
     <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="src/images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,124 +12,129 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles/style.css">
     <script src="https://kit.fontawesome.com/98721b54aa.js" crossorigin="anonymous"></script>
-    <title>BEM STIKOM CKI 2024</title>
 </head>
 <body>
-    <!-- NAVIGASI -->
+    <!-- NAVBAR -->
     <nav>
-        <!-- LOGO -->
-        <div class="nav-logo">
-            <a href="index.html">
-                <img src="/src/images/logobem.png">
-                <h2>BEM STIKOM CKI</h2>
-            </a>
-        </div>
-        <!-- MENU -->
-        <div class="nav-menu">
-            <ul>
-                <li><a href="index.html" class="aktif">Home</a></li>
+        <a href="index.html">
+            <img src="/src/images/logobem.png" alt="Logo BEM STIKOM CKI">
+            <h2>BEM STIKOM CKI</h2>
+        </a>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li class="nav-dropdown">
+                <a href="kementerian.html">Kementerian <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></a>
+                <ul class="nav-dropdown-content">
+                    <li><a href="">Sekretaris</a></li>
+                    <li><a href="">Bendahara</a></li>
+                    <li><a href="">Humas</a></li>
+                    <li><a href="">Adkesma</a></li>
+                    <li><a href="">Depkominfo</a></li>
+                    <li><a href="">Regional UKM</a></li>
+                </ul>
+            </li>
+        </ul>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <label for="checkbox" class="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="tentang.html">Tentang Kami</a></li>
-                <li><a href="">Kabinet</a></li>
+                <li class="sidebar-dropdown">
+                    <a href="#">Kementerian <i class="fa-solid fa-arrow-turn-down" style="font-size: 10px;"></i></a>
+                    <ul class="sidebar-dropdown-content">
+                        <li><a href="">Sekretaris</a></li>
+                        <li><a href="">Bendahara</a></li>
+                        <li><a href="">Humas</a></li>
+                        <li><a href="">Adkesma</a></li>
+                        <li><a href="">Depkominfo</a></li>
+                        <li><a href="">Regional UKM</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
+        <label for="checkbox" id="overlay"></label>
+        <label for="checkbox" class="open-sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
     </nav>
 
-    <!-- HEADER -->
     <header>
-        <div class="head-container">
-            <!-- KABINET -->
-            <div class="head-kabinet">
-                <div class="kabinet">
-                    <h2>KABINET</h2>
-                </div>
-                <div class="nama-kabinet">
-                    <h2>DHARMA SATVAVIRA</h2>
-                    <h2>DIALEKTIKA</h2>
-                </div>
-            </div>
-            <!-- BEM 2024 -->
-            <div class="head-bem">
-                <img src="/src/images/fullteamhome.png">
-            </div>
-        </div>
+        <h2>
+            <span>KABINET</span> <br>
+            DHARMA SATVAVIRA <br>
+            DIALEKTIKA
+        </h2>
+        <img src="/src/images/bemstikom.png" alt="Anggota BEM STIKOM CKI">
     </header>
 
-    <!-- MAIN -->
     <main>
-        <div class="main-container">
-            <div class="sambutan-container">
-                <div class="sambutan-head">
-                    <h2>SAMBUTAN</h2>
-                    <p>Sambutan dari Presiden Mahasiswa dan Wakil Presiden Mahasiswa Sekolah Tinggi Ilmu Komputer Cipta Karya Informatika, Badan Eksekutif Mahasiswa Kabinet Dharma Satvavira Dialektika</p>
+        <!-- PRESMA & WAPRESMA -->
+        <section class="bem">
+            <div class="card">
+                <div class="image">
+                    <img src="/src/images/rabowo.png" alt="Presiden dan Wakil Presiden Mahasiswa">
                 </div>
-                <div class="sambutan-group">
-                    <!-- SAMBUTAN PRESMA -->
-                    <div class="sambutan-card presma">
-                        <!-- GAMBAR -->
-                        <div class="sambutan-gambar">
-                            <img src="/src/images/rajahome.jpg">
-                        </div>
-                        <!-- JABATAN -->
-                        <div class="sambutan-jabatan">
-                            <p>Presma</p>
-                        </div>
-                        <!-- TEKS -->
-                        <div class="sambutan-teks">
-                            <!-- HIDDEN CHECKBOX -->
-                            <input type="checkbox" id="toggle-teks-p">
-                            <p>Presiden Mahasiswa</p>
-                            <p>Danendra Satriyohadi Notonegoro</p>
-                            <div class="sambutan-teks-hidden">
-                                <p>
-                                    Salam Perubahan! <br><br>
-
-                                    Mahasiswa sekalian, di tangan kita, perubahan adalah sebuah kepastian. Dalam setiap langkah dan suara yang kita lantangkan, terletak tanggung jawab besar untuk masa depan yang kita cita-citakan. Bersama, kita adalah kekuatan yang tak tergoyahkan—sebuah bara yang terus menyala, membakar semangat untuk terus belajar, bergerak, dan mengabdi. <br><br>
-
-                                    Sebagai Presiden Mahasiswa, saya berdiri di sini bukan hanya sebagai pemimpin, tetapi sebagai kawan seperjuangan. Mari jadikan BEM ini bukan sekedar organisasi, melainkan sebuah ruang hidup, tempat kita memupuk ide-ide segar, memperjuangkan aspirasi, dan bersama-sama menciptakan perubahan nyata. Karena di balik setiap kunjungan dan aksi kita, terukir sejarah yang akan diwariskan. <br><br>
-
-                                    Kepada setiap jiwa yang haus akan kemajuan, teruslah bergerak dan menginspirasi. Hidup Mahasiswa!
-                                </p>
-                            </div>
-                        </div>
-                        <!-- TOGGLE -->
-                        <div class="sambutan-toggle">
-                            <label for="toggle-teks-p">&nbsp;</label>
-                        </div>
-                    </div>
-                    <!-- SAMBUTAN WAPRESMA -->
-                    <div class="sambutan-card wapresma">
-                        <!-- GAMBAR -->
-                        <div class="sambutan-gambar">
-                            <img src="/src/images/bowohome.png">
-                        </div>
-                        <!-- JABATAN -->
-                        <div class="sambutan-jabatan">
-                            <p>Wapresma</p>
-                        </div>
-                        <!-- TEKS -->
-                        <div class="sambutan-teks">
-                            <!-- HIDDEN CHECKBOX -->
-                            <input type="checkbox" id="toggle-teks-wp">
-                            <p>Wakil Presiden Mahasiswa</p>
-                            <p>Rafi Bowo Raharjo</p>
-                            <div class="sambutan-teks-hidden">
-                                <p>
-                                    Selamat datang di website resmi Badan Eksekutif Mahasiswa STIKOM Cipta Karya Informatika tahun 2024/2025! Kami sangat bangga dan bersemangat menyambut Anda di sini. <br><br>
-
-                                    Sebagai wakil ketua BEM, kami berkomitmen untuk menghadirkan lingkungan kampus yang dinamis, inspiratif, dan mendukung pengembangan potensi setiap mahasiswa. Website ini adalah wujud dari komitmen kami untuk keterbukaan informasi dan sebagai sarana interaksi antara BEM, mahasiswa, dan seluruh civitas akademika STIKOM Cipta Karya Informatika. <br><br>
-
-                                    Di sini, Anda akan menemukan berbagai informasi mengenai kegiatan, program kerja, serta wadah untuk menyalurkan ide dan aspirasi. Mari kita bersama-sama menciptakan suasana kampus yang produktif, kolaboratif, dan penuh inovasi untuk STIKOM Cipta Karya Informatika yang lebih maju.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- TOGGLE -->
-                        <div class="sambutan-toggle">
-                            <label for="toggle-teks-wp">&nbsp;</label>
-                        </div>
-                    </div>
+                <div class="text">
+                    <h2>
+                        Presiden dan Wakil Presiden <br>
+                        Mahasiswa <br>
+                    </h2>
+                    <a href="sambutan.html">Sambutan</a>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- KEMENTERIAN -->
+        <section class="kementerian">
+            <h2>KEMENTERIAN</h2>
+            <div class="mentri-wrapper">
+                <!-- SEKRETARIS -->
+                <div class="divisi">
+                    <details>
+                        <summary>Sekretaris <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                        <p>Sekretaris adalah kementerian yang bertanggung jawab atas seluruh administrasi kesekretariatan BEM, mulai dari pengelolaan surat-menyurat, proposal, dan laporan kegiatan, hingga pengarsipan dokumen. Kementerian ini juga mengelola persiapan rapat, serta memastikan informasi internal dan eksternal tersampaikan kepada seluruh anggota BEM.</p>
+                    </details>
+                </div>
+                <!-- BENDAHARA -->
+                <div class="divisi">
+                    <details>
+                        <summary>Bendahara <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                        <p>Bendahara adalah kementerian yang bertugas mengelola keuangan BEM secara transparan dan akuntabel. Kementerian ini menyusun laporan keuangan berkala, mengelola bukti transaksi, memantau kegiatan Dana Usaha (Danus), serta mengawasi aliran pemasukan dan pengeluaran untuk memastikan kelancaran finansial organisasi.</p>
+                    </details>
+                </div>
+                <!-- HUMAS -->
+                <div class="divisi">
+                    <details>
+                        <summary>Humas <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                        <p>Humas (Hubungan Masyarakat) adalah kementerian yang berperan sebagai penghubung antara BEM dan mahasiswa serta pihak eksternal. Tugas utama Humas adalah menyebarluaskan informasi kegiatan BEM, membangun citra positif organisasi, serta mengelola komunikasi dan interaksi dengan masyarakat kampus agar terjalin partisipasi aktif dan dukungan yang kuat.</p>
+                    </details>
+                </div>
+                <!-- ADKESMAS -->
+                <div class="divisi">
+                    <details>
+                        <summary>Adkesma <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                        <p>Adkesma (Advokasi Kesejahteraan Mahasiswa) adalah kementerian yang mengadvokasi kepentingan dan kesejahteraan mahasiswa di lingkungan kampus. Kementerian ini mendengarkan aspirasi mahasiswa, menyampaikan isu-isu kesejahteraan kepada pihak terkait, serta memberikan pelayanan advokasi dalam hal akademik, sosial, dan fasilitas kampus untuk memastikan terciptanya lingkungan yang nyaman dan mendukung bagi seluruh mahasiswa.</p>
+                    </details>
+                </div>
+                <!-- DEPKOMINFO -->
+                <div class="divisi">
+                    <details>
+                        <summary>Depkominfo <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                        <p>Depkominfo (Departemen Komunikasi dan Informasi) adalah kementerian yang mengelola sistem komunikasi dan informasi BEM. Kementerian ini bertugas memfasilitasi penyebaran informasi melalui media sosial dan mading kampus, serta mengembangkan konten digital di platform resmi BEM agar mahasiswa tetap terinformasi dengan baik mengenai kegiatan dan isu terkini di kampus.</p>
+                    </details>
+                </div>
+                <!-- REGIONAL UKM -->
+                <div class="divisi">
+                    <details>
+                        <summary>Regional UKM <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                        <p>Regional UKM (Unit Kegiatan Mahasiswa) adalah kementerian yang menjembatani komunikasi dan koordinasi antara UKM di kampus. Kementerian ini berperan dalam memonitor dan mengevaluasi kegiatan UKM, mendukung promosi dan rekrutmen anggota baru, serta membangun jaringan kerja sama dengan pihak eksternal untuk mendukung kelancaran program UKM.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
