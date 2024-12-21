@@ -128,83 +128,139 @@ nav .sidebar {
 
 /* HEADER */
 header {
+    padding: 3rem;
+}
+
+header h2 {
+    margin-bottom: 20px;
+    font-size: clamp(1rem, 6vw, 4rem);
+    line-height: 1;
+}
+
+header h2 span {
+    font-weight: 500;
+}
+
+header img {
     width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/src/images/bemstikom-filter.png);
-    filter: grayscale(0.5);
-    background-position: center;
-    background-size: cover;
+    opacity: 0.8;
+    border-radius: 1rem;
 }
-
-header h1 {
-    font-weight: 600;
-    font-size: clamp(1rem, 6vw, 5rem);
-    color: #FFFFFF;
-}
-
 
 /* MAIN */
 main {
-    padding: 3rem;
+    padding: 0 3rem 3rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
 
-main > h2 {
-    font-size: 3rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-/* MAIN | LOGO */
-main .logo-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-}
-
-main .logo-wrapper .logo {
+/* MAIN | SAMBUTAN */
+main .sambutan {
+    padding: 0 3rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0 0 1px 0 #444444;
+    gap: 3rem;
+    background: linear-gradient(to right, royalblue, royalblue, cornflowerblue);
     border-radius: 1rem;
 }
 
-main .logo-wrapper .logo .logo-image {
-    padding: 2rem 0;
+main .sambutan img {
+    width: 250px;
+    opacity: 0.9;
+}
+
+main .sambutan .head-sambutan {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1;
+}
+main .sambutan .head-sambutan h2 {
+    font-size: clamp(1rem, 3vw, 3rem);
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+main .sambutan .head-sambutan a {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+}
+main .sambutan .head-sambutan a:hover {
+    color: royalblue;
+    background-color: #FFFFFF;
+    border: 1px solid royalblue;
+}
+
+/* MAIN | KEMENTERIAN */
+main .kementerian {
+    padding: 3rem;
     background-color: #F1F2F4;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem;
 }
 
-main .logo-wrapper .logo .logo-image img {
-    width: 70%;
+main .kementerian h2 {
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-size: clamp(1rem, 4vw, 3rem);
+    text-align: center;
 }
 
-main .logo-wrapper .logo .logo-text {
+main .kementerian .kementerian-wrapper {
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+main .kementerian .kementerian-wrapper details[open] i {
+    transform: rotate(180deg);
+}
+main .kementerian .kementerian-wrapper details i {
+    transition: .2s ease-in-out;
+}
+
+main .kementerian .kementerian-wrapper details[open] summary.regional-ukm {
+    border-radius: 0;
+}
+main .kementerian .kementerian-wrapper details[open] summary.regional-ukm ~ p {
+    border-radius: 0 0 1rem 0;
+}
+
+main .kementerian .kementerian-wrapper details[open] p {
+    background-color: #FFB79233;
+    border-left: 5px solid var(--secondary-color);
+}
+
+main .kementerian .kementerian-wrapper details summary {
+    cursor: pointer;
     padding: 1rem 1.5rem;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #FFFFFF;
+}
+main .kementerian .kementerian-wrapper details summary.sekretaris {
+    border-radius: 1rem 1rem 0 0;
+}
+main .kementerian .kementerian-wrapper details summary.regional-ukm {
+    border-radius: 0 0 1rem 1rem;
 }
 
-main .logo-wrapper .logo .logo-text h3 {
-    font-weight: 600;
-    font-size: 1.3rem;
+main .kementerian .kementerian-wrapper details p {
+    padding: 1rem 1.5rem;
+    text-align: justify;
+    background-color: #F8F8F8;
 }
-main .logo-wrapper .logo .logo-text p {
-    color: #666666;
-}
-
-/* MAIN | WARNA */
-
 
 /* FOOTER */
 footer {

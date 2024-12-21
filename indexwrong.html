@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles/tentang.css">
+    <link rel="stylesheet" href="src/styles/stylewrong.css">
     <script src="https://kit.fontawesome.com/98721b54aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,8 +20,8 @@
             <h2>BEM STIKOM CKI</h2>
         </a>
         <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tentang.html" class="active">Tentang Kami</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
             <li class="nav-dropdown">
                 <a>Kementerian <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></a>
                 <ul class="nav-dropdown-content">
@@ -29,7 +29,7 @@
                     <li><a href="">Bendahara</a></li>
                     <li><a href="">Humas</a></li>
                     <li><a href="">Adkesma</a></li>
-                    <li><a href="">Depkominfo</a></li>
+                    <li><a href="kementrian.html">Depkominfo</a></li>
                     <li><a href="">Regional UKM</a></li>
                 </ul>
             </li>
@@ -40,8 +40,8 @@
                 <label for="checkbox" class="close-sidebar">
                     <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </label>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tentang.html" class="active">Tentang Kami</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
                 <li class="sidebar-dropdown">
                     <a>Kementerian <i class="fa-solid fa-arrow-turn-down" style="font-size: 10px;"></i></a>
                     <ul class="sidebar-dropdown-content">
@@ -49,7 +49,7 @@
                         <li><a href="">Bendahara</a></li>
                         <li><a href="">Humas</a></li>
                         <li><a href="">Adkesma</a></li>
-                        <li><a href="">Depkominfo</a></li>
+                        <li><a href="kementrian.html">Depkominfo</a></li>
                         <li><a href="">Regional UKM</a></li>
                     </ul>
                 </li>
@@ -63,48 +63,56 @@
 
     <!-- HEADER -->
     <header>
-        <h1>TENTANG KAMI</h1>
+        <h2>
+            <span>KABINET</span> <br> DHARMA SATVAVIRA <br> DIALEKTIKA
+        </h2>
+        <img src="/src/images/bemstikom.png" alt="BEM STIKOM CKI">
     </header>
 
     <!-- MAIN -->
     <main>
-        <h2>Filosofi Logo</h2>
-        <section class="logo-wrapper">
-            <div class="logo">
-                <div class="logo-image">
-                    <img src="/src/images/logobem.png" alt="Logo BEM: Gurita">
-                </div>
-                <div class="logo-text">
-                    <h3>Gurita</h3>
-                    <p>Filosofi: <br>Gurita digambarkan sebagai entitas yang tangguh, inovatif, dan mampu beradaptasi dengan perubahan, serta memiliki kecerdaan dalam mencari solusi saat penanganan masalah.</p>
-                </div>
+        <!-- SAMBUTAN -->
+        <section class="sambutan">
+            <img src="/src/images/rabowo.png" alt="Presiden dan Wakil Presiden Mahasiswa">
+            <div class="head-sambutan">
+                <h2>Presiden dan Wakil Presiden <br> Mahasiswa STIKOM CKI</h2>
+                <a href="sambutan.html">Sambutan</a>
             </div>
-            <div class="logo">
-                <div class="logo-image">
-                    <img src="/src/images/logobem-segitiga.png" alt="Logo BEM: Segitiga">
-                </div>
-                <div class="logo-text">
-                    <h3>Segitiga</h3>
-                    <p>Filosofi: <br>Segitiga memiliki makna kebenaran, baik dari segi kesempurnaan struktural maupun keseimbangan, juga mencerminkan komitmen, terhadap kejujuran, integritas dan pencarian kebenaran yang berkelanjutan.</p>
-                </div>
-            </div>
-            <div class="logo">
-                <div class="logo-image">
-                    <img src="/src/images/logobem-angkat.png" alt="Logo BEM: Orang Mengangkat Tangan">
-                </div>
-                <div class="logo-text">
-                    <h3>Orang Mengangkat Tangan</h3>
-                    <p>Filosofi: <br>Simbol diatas menggambarkan orang yang menyuarakan, komunikatif dan responsif tentang permasalahan yang berhubungan dengan keadilan.</p>
-                </div>
-            </div>
-            <div class="logo">
-                <div class="logo-image">
-                    <img src="/src/images/logobem-kepal.png" alt="Logo BEM: Dua Tangan Mengepal">
-                </div>
-                <div class="logo-text">
-                    <h3>Dua Tangan Mengepal</h3>
-                    <p>Filosofi: <br>Kepalan tangan melambangkan kekuatan dan keteguhan. Ini menunjukkan bahwa organisasi memiliki kekuatan untuk menghadapi tantangan dan berkomitmen untuk mencapai tujuannya. Juga menjadi simbol keberanian dan tekad dalam menghadapi tantangan.</p>
-                </div>
+        </section>
+        <!-- KEMENTERIAN -->
+        <section class="kementerian">
+            <h2>Kementerian</h2>
+            <div class="kementerian-wrapper">
+                <!-- SEKRETARIS -->
+                <details>
+                    <summary class="sekretaris">Sekretaris <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                    <p>Sekretaris adalah kementerian yang bertanggung jawab atas seluruh administrasi kesekretariatan BEM, mulai dari pengelolaan surat-menyurat, proposal, dan laporan kegiatan, hingga pengarsipan dokumen. Kementerian ini juga mengelola persiapan rapat, serta memastikan informasi tersampaikan kepada seluruh anggota BEM.</p>
+                </details>
+                <!-- BENDAHARA -->
+                <details>
+                    <summary>Bendahara <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                    <p>Bendahara adalah kementerian yang bertugas mengelola keuangan BEM secara transparan dan akuntabel. Kementerian ini menyusun laporan keuangan berkala, mengelola bukti transaksi, memantau kegiatan Dana Usaha, serta mengawasi aliran pemasukan dan pengeluaran untuk memastikan kelancaran finansial organisasi.</p>
+                </details>
+                <!-- HUMAS -->
+                <details>
+                    <summary>Humas <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                    <p>Humas (Hubungan Masyarakat) adalah kementerian yang berperan sebagai penghubung antara BEM dan mahasiswa serta pihak eksternal. Tugas utama Humas adalah menyebarluaskan informasi kegiatan BEM, membangun citra positif organisasi, serta mengelola komunikasi dan interaksi dengan masyarakat kampus agar terjalin partisipasi aktif dan dukungan yang kuat.</p>
+                </details>
+                <!-- ADKESMA -->
+                <details>
+                    <summary>Adkesma <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                    <p>Adkesma (Advokasi Kesejahteraan Mahasiswa) adalah kementerian yang mengadvokasi kepentingan dan kesejahteraan mahasiswa di lingkungan kampus. Kementerian ini mendengarkan aspirasi mahasiswa, menyampaikan isu-isu kesejahteraan kepada pihak terkait, serta memberikan pelayanan advokasi dalam hal akademik, sosial, dan fasilitas kampus untuk memastikan terciptanya lingkungan yang nyaman dan mendukung bagi seluruh mahasiswa.</p>
+                </details>
+                <!-- DEPKOMINFO -->
+                <details>
+                    <summary>Depkominfo <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                    <p>Depkominfo (Departemen Komunikasi dan Informasi) adalah kementerian yang mengelola sistem komunikasi dan informasi BEM. Kementerian ini bertugas memfasilitasi penyebaran informasi melalui media sosial dan mading kampus, serta mengembangkan konten digital di platform resmi BEM agar mahasiswa tetap terinformasi dengan baik mengenai kegiatan dan isu terkini di kampus.</p>
+                </details>
+                <!-- REGIONAL UKM -->
+                <details>
+                    <summary class="regional-ukm">Regional UKM <i class="fa-solid fa-circle-chevron-down"></i></summary>
+                    <p>Regional UKM (Unit Kegiatan Mahasiswa) adalah kementerian yang menjembatani komunikasi dan koordinasi antara UKM di kampus. Kementerian ini berperan dalam memonitor dan mengevaluasi kegiatan UKM, mendukung promosi dan rekrutmen anggota baru, serta membangun jaringan kerja sama dengan pihak eksternal untuk mendukung kelancaran program UKM.</p>
+                </details>
             </div>
         </section>
     </main>
