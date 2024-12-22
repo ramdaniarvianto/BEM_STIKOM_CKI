@@ -110,6 +110,7 @@ nav .nav-menu .dropdown-content {
     margin-top: -5px;
     background-color: #F1F2FB;
     border: 1px solid #DDD;
+    border-radius: 5px;
 }
 /* DROPDOWN SHOW */
 nav .nav-menu .dropdown:hover > .dropdown-content {
@@ -124,6 +125,7 @@ nav .nav-menu .dropdown-content a {
 nav .nav-menu .dropdown-content a:hover {
     color: #444;
     background-color: #D3506B10;
+    border-radius: 3px;
 }
 nav .nav-menu .dropdown-content a:active {
     color: var(--primary-color);
@@ -137,6 +139,7 @@ header {
 header img {
     width: 100%;
     opacity: 0.8;
+    border-radius: 10px;
 }
 
 /* MAIN */
@@ -154,6 +157,7 @@ main .sambutan {
     align-items: center;
     gap: 3rem;
     background-color: royalblue;
+    border-radius: 10px;
 }
 
 main .sambutan img {
@@ -172,9 +176,10 @@ main .sambutan .text h3 {
     color: #FFF;
 }
 main .sambutan a {
-    padding: 5px 10px;
+    padding: 5px 15px;
     color: #FFF;
     border: 1px solid #FFF;
+    border-radius: 100px;
 }
 main .sambutan a:hover {
     color: royalblue;
@@ -187,7 +192,7 @@ main .kementerian {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #D3506B10;
+    /* background-color: #D3506B10; */
 }
 
 main .kementerian h2 {
@@ -207,8 +212,12 @@ main .kementerian .kementerian-wrap details {
     padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
-    background-color: #F1F2FB;
+    background-color: #D3506B10;
+    border-radius: 5px;
     transition: .2s ease-in-out;
+}
+main .kementerian .kementerian-wrap details:hover {
+    background-color: #D3506B20;
 }
 
 main .kementerian .kementerian-wrap details summary {
@@ -226,9 +235,15 @@ main .kementerian .kementerian-wrap details summary svg {
     transition: .2s ease-in-out;
 }
 
+main .kementerian .kementerian-wrap details[open] {
+    background-color: #D3506B30;
+    border-radius: 10px;
+}
 main .kementerian .kementerian-wrap details[open] svg {
     transform: rotate(0);
-    background-color: #D3506B10;
+    fill: #D3506B90;
+    background-color: #F1F2FB90;
+    border-radius: 100px;
 }
 main .kementerian .kementerian-wrap details[open] summary {
     margin-bottom: 1rem;

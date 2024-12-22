@@ -113,6 +113,7 @@ nav .nav-menu .dropdown-content {
     margin-top: -5px;
     background-color: #F1F2FB;
     border: 1px solid #DDD;
+    border-radius: 5px;
 }
 /* DROPDOWN SHOW */
 nav .nav-menu .dropdown:hover > .dropdown-content {
@@ -127,6 +128,7 @@ nav .nav-menu .dropdown-content a {
 nav .nav-menu .dropdown-content a:hover {
     color: #444;
     background-color: #D3506B10;
+    border-radius: 3px;
 }
 nav .nav-menu .dropdown-content a:active {
     color: var(--primary-color);
@@ -200,6 +202,7 @@ main article .sambutan figure img {
     width: 100%;
     height: auto;
     background-color: royalblue;
+    border-radius: 10px;
 }
 
 main article .sambutan figure figcaption {
@@ -211,6 +214,7 @@ main article .sambutan figure figcaption {
     line-height: 1;
     color: #F1F2FB;
     background-color: #D3506B90;
+    border-radius: 0 0 10px 10px;
 }
 
 /* ASIDE CONTENT */
@@ -226,6 +230,7 @@ aside .collaboration {
     align-items: flex-start;
     gap: 1rem;
     background-color: #D3506B20;
+    border-radius: 10px;
 }
 
 aside .collaboration p {
@@ -237,9 +242,18 @@ aside .collaboration a {
     padding: 5px 1rem;
     color: #F1F2FB;
     background-color: var(--primary-color);
+    border-radius: 100px;
+    transition: .2s ease-in-out;
 }
 aside .collaboration a:hover > i {
-    padding-right: 8px;
+    padding-right: 5px;
+}
+aside .collaboration a::after {
+    content: "WhatsApp";
+    padding-left: 5px;
+}
+aside .collaboration a:hover::after {
+    content: "Humas";
 }
 
 
