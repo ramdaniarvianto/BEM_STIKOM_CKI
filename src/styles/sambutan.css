@@ -113,7 +113,6 @@ nav .nav-menu .dropdown-content {
     margin-top: -5px;
     background-color: #F1F2FB;
     border: 1px solid #DDD;
-    border-radius: 5px;
 }
 /* DROPDOWN SHOW */
 nav .nav-menu .dropdown:hover > .dropdown-content {
@@ -128,7 +127,6 @@ nav .nav-menu .dropdown-content a {
 nav .nav-menu .dropdown-content a:hover {
     color: #444;
     background-color: #D3506B10;
-    border-radius: 3px;
 }
 nav .nav-menu .dropdown-content a:active {
     color: var(--primary-color);
@@ -191,21 +189,28 @@ main article .sambutan {
 }
 
 main article .sambutan figure {
+    width: 350px;
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
 main article .sambutan figure img {
-    width: 300px;
-    border-radius: .5rem;
+    width: 100%;
+    height: auto;
     background-color: royalblue;
 }
 
 main article .sambutan figure figcaption {
-    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
     font-weight: 600;
-    color: #000;
+    text-align: center;
+    line-height: 1;
+    color: #F1F2FB;
+    background-color: #D3506B90;
 }
 
 /* ASIDE CONTENT */
@@ -221,7 +226,6 @@ aside .collaboration {
     align-items: flex-start;
     gap: 1rem;
     background-color: #D3506B20;
-    border-radius: 1rem;
 }
 
 aside .collaboration p {
@@ -233,7 +237,6 @@ aside .collaboration a {
     padding: 5px 1rem;
     color: #F1F2FB;
     background-color: var(--primary-color);
-    border-radius: 100px;
 }
 aside .collaboration a:hover > i {
     padding-right: 8px;

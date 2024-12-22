@@ -110,7 +110,6 @@ nav .nav-menu .dropdown-content {
     margin-top: -5px;
     background-color: #F1F2FB;
     border: 1px solid #DDD;
-    border-radius: 5px;
 }
 /* DROPDOWN SHOW */
 nav .nav-menu .dropdown:hover > .dropdown-content {
@@ -125,7 +124,6 @@ nav .nav-menu .dropdown-content a {
 nav .nav-menu .dropdown-content a:hover {
     color: #444;
     background-color: #D3506B10;
-    border-radius: 3px;
 }
 nav .nav-menu .dropdown-content a:active {
     color: var(--primary-color);
@@ -139,7 +137,6 @@ header {
 header img {
     width: 100%;
     opacity: 0.8;
-    border-radius: 1rem;
 }
 
 /* MAIN */
@@ -157,7 +154,6 @@ main .sambutan {
     align-items: center;
     gap: 3rem;
     background-color: royalblue;
-    border-radius: 1rem;
 }
 
 main .sambutan img {
@@ -179,7 +175,6 @@ main .sambutan a {
     padding: 5px 10px;
     color: #FFF;
     border: 1px solid #FFF;
-    border-radius: 6px;
 }
 main .sambutan a:hover {
     color: royalblue;
@@ -193,7 +188,6 @@ main .kementerian {
     flex-direction: column;
     gap: 2rem;
     background-color: #D3506B10;
-    border-radius: 1rem;
 }
 
 main .kementerian h2 {
@@ -214,7 +208,6 @@ main .kementerian .kementerian-wrap details {
     display: flex;
     flex-direction: column;
     background-color: #F1F2FB;
-    border-radius: .5rem;
     transition: .2s ease-in-out;
 }
 
@@ -230,13 +223,9 @@ main .kementerian .kementerian-wrap details summary {
 
 main .kementerian .kementerian-wrap details summary svg {
     transform: rotate(-45deg);
-    border-radius: 100px;
     transition: .2s ease-in-out;
 }
 
-main .kementerian .kementerian-wrap details[open] {
-    border-radius: 1rem;
-}
 main .kementerian .kementerian-wrap details[open] svg {
     transform: rotate(0);
     background-color: #D3506B10;
