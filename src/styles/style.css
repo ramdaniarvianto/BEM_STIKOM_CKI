@@ -195,13 +195,13 @@ main .kementerian {
     gap: 3rem;
 }
 
-main .kementerian h2 {
+main .kementerian .kementerian-head h2 {
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
 }
 
-main .kementerian p {
+main .kementerian .kementerian-head p {
     text-align: center;
 }
 
