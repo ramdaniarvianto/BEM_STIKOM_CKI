@@ -131,3 +131,129 @@ nav .nav-menu .dropdown-content a:active {
     color: var(--primary-color);
 }
 
+/* MAIN */
+main {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+main section > h2 {
+    margin-bottom: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* FILOSOFI LOGO */
+main .filosofi-logo {
+    margin: 0 15rem;
+}
+
+main .filosofi-logo .logo-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+main .filosofi-logo .logo {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #44444450;
+    border-radius: 10px;
+}
+
+main .filosofi-logo .logo img {
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+main .filosofi-logo .logo span {
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+main .filosofi-logo .logo p {
+    text-align: center;
+}
+
+/* FILOSOFI NAMA */
+main .filosofi-nama .nama-kabinet h2 {
+    padding: 1rem 3rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+    border: 1px solid #D3506B50;
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color), var(--primary-color), var(--secondary-color));
+    color: transparent;
+    background-clip: text;
+    border-radius: 100px;
+}
+
+main .filosofi-nama .nama-container {
+    margin: 0 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+main .filosofi-nama .nama-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main .filosofi-nama .nama-wrap .nama {
+    padding: 1rem 0;
+    border-bottom: 1px solid #44444450;
+}
+
+main .filosofi-nama .nama-wrap .nama span {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+/* FILOSOFI WARNA */
+main .filosofi-warna {
+    margin: 0 15rem;
+}
+
+main .filosofi-warna .warna-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+main .filosofi-warna .warna-container img {
+    width: 250px;
+}
+
+main .filosofi-warna .warna-wrap {
+    display: flex;
+    gap: 3rem;
+}
+
+main .filosofi-warna .warna-wrap .warna {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .filosofi-warna .warna-wrap .warna img {
+    width: 200px;
+}
+
+main .filosofi-warna .warna-wrap .warna p {
+    text-align: center;
+}

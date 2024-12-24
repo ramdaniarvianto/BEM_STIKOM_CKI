@@ -134,6 +134,18 @@ nav .nav-menu .dropdown-content a:active {
 /* HEADER */
 header {
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+header h1 {
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+header span {
+    font-weight: 400;
 }
 
 header img {
@@ -197,7 +209,7 @@ main .kementerian {
 
 main .kementerian .kementerian-head h2 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -229,7 +241,7 @@ main .kementerian .kementerian-wrap details summary {
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
     transition: .2s ease-in-out;
 }
 
