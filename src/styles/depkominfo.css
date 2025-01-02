@@ -143,13 +143,12 @@ nav .nav-menu .dropdown-content a:active {
 
 /* BREADCRUMB */
 .breadcrumb {
-    padding: .5rem 1.5rem;
+    cursor: default;
     margin: 1rem 3rem;
     display: flex;
     align-items: center;
-    gap: .5rem;
-    background-color: #D3506B10;
-    border-radius: 100px;
+    gap: 10px;
+    color: #44444490;
 }
 
 .breadcrumb .home {
@@ -158,9 +157,12 @@ nav .nav-menu .dropdown-content a:active {
     gap: 5px;
 }
 .breadcrumb .home:hover {
-    text-decoration: underline;
+    color: #444;
 }
 
+.breadcrumb a {
+    color: #44444490;
+}
 .breadcrumb a.active {
-    color: var(--primary-color);
+    color: #444;
 }
