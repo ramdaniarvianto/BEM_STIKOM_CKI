@@ -504,4 +504,29 @@ footer .footer-copy {
     nav .open-sidebar {
         display: none;
     }
+
+    /* MAIN | FILOSOFI LOGO */
+    main .filosofi-logo {
+        margin: 0 3rem;
+    }
+
+    /* MAIN | FILOSOFI NAMA */
+    main .filosofi-nama .nama-container {
+        margin: 0 3rem;
+    }
+
+    /* MAIN | FILOSOFI WARNA */
+    main .filosofi-warna {
+        margin: 0 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    main .filosofi-logo {
+        margin: 0 15rem;
+    }
+
+    main .filosofi-warna {
+        margin: 0 15rem;
+    }
 }

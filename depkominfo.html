@@ -14,27 +14,52 @@
 </head>
 <body>
     <nav>
-        <!-- NAVBAR -->
         <a href="index.html" class="nav-logo">
-            <img src="/src/images/logobem.png" alt="Logo BEM">
-            <span>BEM STIKOM CKI</span>
+            <img src="/src/images/logobem-home.png" alt="Logo BEM STIKOM CKI">
+            <p>BEM STIKOM CKI</p>
         </a>
         <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
             <li class="dropdown">
-                <a>Kementerian <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 -960 960 960" width="1rem" fill="undefined"><path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/></svg></a>
+                <a>Kementerian <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="undefined"><path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/></svg></a>
                 <ul class="dropdown-content">
-                    <li><a href="">Sekretaris</a></li>
-                    <li><a href="">Bendahara</a></li>
-                    <li><a href="">Humas</a></li>
-                    <li><a href="">Adkesma</a></li>
-                    <li><a href="">Depkominfo</a></li>
-                    <li><a href="">Regional UKM</a></li>
+                    <li><a href="sekretaris.html">Sekretaris</a></li>
+                    <li><a href="bendahara.html">Bendahara</a></li>
+                    <li><a href="humas.html">Humas</a></li>
+                    <li><a href="adkesma.html">Adkesma</a></li>
+                    <li><a href="depkominfo.html">Depkominfo</a></li>
+                    <li><a href="regionalukm.html">Regional UKM</a></li>
                 </ul>
             </li>
         </ul>
+        <!-- CHECKBOX -->
+        <input type="checkbox" name="sidebar-active" id="sidebar-active">
+        <!-- OPEN SIDEBAR -->
+        <label for="sidebar-active" class="open-sidebar"><svg class="open-sidebar" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></label>
         <!-- SIDEBAR -->
+        <div class="sidebar">
+            <label for="sidebar-active" class="sidebar-close">
+                <p>Menu</p>
+                <svg class="close-sidebar" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+            <ul class="sidebar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li class="sidebar-dropdown">
+                    <a>Kementerian <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="undefined"><path d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"/></svg></a>
+                    <ul class="sidebar-dropdown-content">
+                        <li><a href="sekretaris.html">Sekretaris</a></li>
+                        <li><a href="bendahara.html">Bendahara</a></li>
+                        <li><a href="humas.html">Humas</a></li>
+                        <li><a href="adkesma.html">Adkesma</a></li>
+                        <li><a href="depkominfo.html">Depkominfo</a></li>
+                        <li><a href="regional.ukm">Regional UKM</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <label for="sidebar-active" class="overlay"></label>
     </nav>
 
     <div class="breadcrumb">
@@ -43,8 +68,34 @@
         <a class="active">Depkominfo</a>
     </div>
 
-    <main>
-        
-    </main>
+    <footer>
+        <div class="footer-head">
+            <div class="footer-wrap">
+                <div class="footer-bem">
+                    <div class="footer-logo">
+                        <img src="/src/images/logobem-home.png" alt="Logo BEM STIKOM CKI">
+                        <p>BEM STIKOM CKI</p>
+                    </div>
+                    <p>Website Resmi BEM STIKOM CKI 2024-2025 Kabinet Dharma Satvavira Dialektika. Hadir Sebagai Ruang dan Wadah Aspirasi dan Realisasi Untuk Transformasi STIKOM CKI dan Indonesia.</p>
+                </div>
+                <div class="footer-links">
+                    <ul class="links">
+                        <p>Social Media</p>
+                        <li><a href="https://www.instagram.com/bemstikomcki_/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/bemstikomcki" target="_blank" class="facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    </ul>
+                    <ul class="links">
+                        <p>Contact Person</p>
+                        <li><a href="https://mail.google.com/mail/?view=cm&to=bemstikomcki2024@gmail.com" target="_blank" class="email"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="https://wa.me/6282247963895" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>Copyright &copy; BEM STIKOM CKI 2025 | Kabinet Dharma Satvavira Dialektika</p>
+        </div>
+    </footer>
 </body>
 </html>

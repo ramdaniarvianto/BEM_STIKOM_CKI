@@ -517,4 +517,15 @@ footer .footer-copy {
     nav .open-sidebar {
         display: none;
     }
+
+    /* MAIN */
+    main .kementerian {
+        margin: 0 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    main .kementerian {
+        margin: 0 15rem;
+    }
 }
